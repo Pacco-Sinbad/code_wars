@@ -23,13 +23,28 @@
 
 //3/21/2023
 
-function getCount(str) {
-    let c = 0
-    let arr = str.split("")
-    for (let i = 0; i<arr.length; i++){
-        if(arr[i]== 'a' || arr[i]== 'e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u'){
-            c++
-        }
-    }
-    return c
+// function getCount(str) {
+//     let c = 0
+//     let arr = str.split("")
+//     for (let i = 0; i<arr.length; i++){
+//         if(arr[i]== 'a' || arr[i]== 'e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u'){
+//             c++
+//         }
+//     }
+//     return c
+//   }
+
+
+//3/22/2023
+
+function findNextSquare(sq) {
+    let num = Math.sqrt(sq);
+    if (num % 1 == 0){
+        console.log(num)
+        num = num + 1
+        console.log(num)
+        return Math.pow(num,2)
+    }else return -1;
   }
+
+  findNextSquare(121)
