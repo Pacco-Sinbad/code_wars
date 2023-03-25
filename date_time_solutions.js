@@ -37,14 +37,22 @@
 
 //3/22/2023
 
-function findNextSquare(sq) {
-    let num = Math.sqrt(sq);
-    if (num % 1 == 0){
-        console.log(num)
-        num = num + 1
-        console.log(num)
-        return Math.pow(num,2)
-    }else return -1;
-  }
+// function findNextSquare(sq) {
+//     let num = Math.sqrt(sq);
+//     if (num % 1 == 0){
+//         console.log(num)
+//         num = num + 1
+//         console.log(num)
+//         return Math.pow(num,2)
+//     }else return -1;
+//   }
 
-  findNextSquare(121)
+//   findNextSquare(121)
+
+// 3/24/2023
+
+// function addBinary(a,b) {
+//     return (a+b).toString(2)
+// }
+
+// to be fair though, I am not entirely certain why this works. i get that we divide the number by two and keep track of the quotient and remainder but id have to mess with that more to make sense of it. additionally this wouldnt work with negative numbers. i would have to use the >>> operator in some fashion to make it work.
