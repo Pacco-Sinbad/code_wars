@@ -80,3 +80,19 @@
 //             if (pin[i] > '9' || pin[i] < '0')
 //                 return false;
 //     return true;
+
+function printerError(str){
+    let l = str.split('').length
+    let arr = str.split('')
+    let c = 0
+   
+   for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 'm'){
+        c += 1        
+    }
+   }
+   return `${c}/${l}`
+}
+
+
+printerErrors('aaaaaaabbbbbbbeeeeeeezzzzz')
