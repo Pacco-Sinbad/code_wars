@@ -56,3 +56,16 @@
 // }
 
 // to be fair though, I am not entirely certain why this works. i get that we divide the number by two and keep track of the quotient and remainder but id have to mess with that more to make sense of it. additionally this wouldnt work with negative numbers. i would have to use the >>> operator in some fashion to make it work.
+
+//3/25/2023
+
+function validatePIN (pin) {
+    let code = pin.toLowerCase().split('')
+    if(code.length == 4 || code.length == 6){
+        if(code.some((x) => Number(x) % 1 !== 0 || code.some((x) => x == " "))){
+            return false ;
+        }else return true;
+    }else return false ;
+  };
+
+console.log(validatePIN('123'))
