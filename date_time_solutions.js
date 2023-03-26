@@ -94,5 +94,8 @@ function printerError(str){
    return `${c}/${l}`
 }
 
+//// extra code war
 
-printerErrors('aaaaaaabbbbbbbeeeeeeezzzzz')
+function whatCentury(num){
+    return Math.ceil(num/100)
+}
