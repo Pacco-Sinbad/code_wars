@@ -59,13 +59,24 @@
 
 //3/25/2023
 
-function validatePIN (pin) {
-    let code = pin.toLowerCase().split('')
-    if(code.length == 4 || code.length == 6){
-        if(code.some((x) => Number(x) % 1 !== 0 || code.some((x) => x == " "))){
-            return false ;
-        }else return true;
-    }else return false ;
-  };
+// function validatePIN (pin) {
+//     let code = pin.toLowerCase().split('')
+//     if(code.length == 4 || code.length == 6){
+//         if(code.some((x) => Number(x) % 1 !== 0 || code.some((x) => x == " "))){
+//             return false ;
+//         }else return true;
+//     }else return false ;
+//   };
 
-console.log(validatePIN('123'))
+// console.log(validatePIN('123'))
+
+// //didnt get the answer this is it  but i think i was close
+// function validatePIN (pin) {
+//   //return true or false
+// 	var n = pin.length;
+//     if( n != 4 && n != 6)
+//             return false;
+//     for (var i in pin)
+//             if (pin[i] > '9' || pin[i] < '0')
+//                 return false;
+//     return true;
