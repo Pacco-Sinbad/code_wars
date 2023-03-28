@@ -79,3 +79,7 @@ printer_error(s) => "0/14"
 
 s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"
+
+`````3/27/2023
+
+perfomed an 8kyu based on what the site gave me. it was just double and return and integer?

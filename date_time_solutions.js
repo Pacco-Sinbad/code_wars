@@ -81,21 +81,27 @@
 //                 return false;
 //     return true;
 
-function printerError(str){
-    let l = str.split('').length
-    let arr = str.split('')
-    let c = 0
+// function printerError(str){
+//     let l = str.split('').length
+//     let arr = str.split('')
+//     let c = 0
    
-   for(let i = 0; i < arr.length; i++){
-    if(arr[i] > 'm'){
-        c += 1        
-    }
-   }
-   return `${c}/${l}`
-}
+//    for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > 'm'){
+//         c += 1        
+//     }
+//    }
+//    return `${c}/${l}`
+// }
 
-//// extra code war
+// //// extra code war
 
-function whatCentury(num){
-    return Math.ceil(num/100)
-}
+// function whatCentury(num){
+//     return Math.ceil(num/100)
+// }
+
+// 3/27/2023
+
+// function double(i) {
+//     return i*2
+// }
