@@ -105,3 +105,30 @@
 // function double(i) {
 //     return i*2
 // }
+
+//3/29/2023
+
+// function nbYear(p0, percent, aug, p) {
+//     let n = 0
+//     console.log(p0, percent, aug, p)
+//     if(percent !== 0){
+      
+//     while(p0.toFixed(0) < p){
+//         p0 = p0 + p0 * (percent/100) + aug;
+//         n++
+//     }
+//        return n
+      
+//     }else {
+//       while(p0.toFixed(0) <= p){
+//         p0 = p0 + aug;
+//         n++
+       
+//     }
+//       return n
+//     }
+// }  
+
+// console.log(nbYear(1000, 2, 50, 1214))
+
+// answer used Math.floor()
