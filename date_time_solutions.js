@@ -132,3 +132,12 @@
 // console.log(nbYear(1000, 2, 50, 1214))
 
 // answer used Math.floor()
+
+
+//04/10/2023
+
+// function solution(str){
+//     return str.split('').reverse().join('')
+// }
+
+// console.log(solution('world'))
