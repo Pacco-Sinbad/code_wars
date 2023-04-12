@@ -149,3 +149,9 @@
 //     arrayOfSheep.forEach((x)=> x === true ? numberOfSheep+= 1 : numberOfSheep)
 //     return numberOfSheep
 //   }
+
+//04/12/2023
+
+// function DNAStrand(dna){
+//   return dna.split('').map((x)=> x == 'A' ? x= 'T' : x == 'T' ? x = 'A' : x== 'G' ? x = 'C' : x== 'C' ? x = 'G' : x).join('')
+// }
