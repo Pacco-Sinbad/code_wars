@@ -144,8 +144,8 @@
 
 //04/11/2023
 
-function countSheeps(arrayOfSheep) {
-    let numberOfSheep = 0;
-    arrayOfSheep.forEach((x)=> x === true ? numberOfSheep+= 1 : numberOfSheep)
-    return numberOfSheep
-  }
+// function countSheeps(arrayOfSheep) {
+//     let numberOfSheep = 0;
+//     arrayOfSheep.forEach((x)=> x === true ? numberOfSheep+= 1 : numberOfSheep)
+//     return numberOfSheep
+//   }
