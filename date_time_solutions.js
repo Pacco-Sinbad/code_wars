@@ -155,3 +155,9 @@
 // function DNAStrand(dna){
 //   return dna.split('').map((x)=> x == 'A' ? x= 'T' : x == 'T' ? x = 'A' : x== 'G' ? x = 'C' : x== 'C' ? x = 'G' : x).join('')
 // }
+
+//04/13/2023
+
+function cockroachSpeed(s) {
+    return Math.floor(s * 100000 / 360)
+  }
