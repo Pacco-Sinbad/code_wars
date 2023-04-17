@@ -158,6 +158,16 @@
 
 //04/13/2023
 
-function cockroachSpeed(s) {
-    return Math.floor(s * 100000 / 360)
-  }
+// function cockroachSpeed(s) {
+//     return Math.floor(s * 100000 / 3600)
+//   }
+
+//04/16/2023
+
+// function countBy(x, n) {
+//     let z = [];
+//     for (let i = 1; i <= n ; i ++){
+//         z.push(i*x)
+//     }
+//     return z;
+//   }
