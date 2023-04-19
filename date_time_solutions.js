@@ -175,24 +175,117 @@
 
 //04/17/2023
 
-const rps = (p1, p2) =>{
-    if(p1 == 'scissors' && p2 == 'rock'){
-        return 'Player 2 won!'
-    }else if(p1 == 'scissors' && p2 == 'paper'){
-        return 'Player 1 won!'
-    }else if(p1 == 'scissors' && p2 == 'scissors'){
-        return 'Draw!'
-    }else if(p1 == 'rock' && p2 == 'rock'){
-        return 'Draw!'
-    }else if(p1 == 'rock' && p2 == 'scissors'){
-        return 'Player 1 won!'
-    }else if(p1 == 'rock' && p2 == 'paper'){
-        return 'Player 2 won!'
-    }else if(p1 == 'paper' && p2 == 'paper'){
-        return 'Draw!'
-    }else if(p1 == 'paper' && p2 == 'rock'){
-        return 'Player 1 won!'
-    }else if(p1 == 'paper' && p2 == 'scissors'){
-        return 'Player 2 won!'
-    }
-}
+// const rps = (p1, p2) =>{
+//     if(p1 == 'scissors' && p2 == 'rock'){
+//         return 'Player 2 won!'
+//     }else if(p1 == 'scissors' && p2 == 'paper'){
+//         return 'Player 1 won!'
+//     }else if(p1 == 'scissors' && p2 == 'scissors'){
+//         return 'Draw!'
+//     }else if(p1 == 'rock' && p2 == 'rock'){
+//         return 'Draw!'
+//     }else if(p1 == 'rock' && p2 == 'scissors'){
+//         return 'Player 1 won!'
+//     }else if(p1 == 'rock' && p2 == 'paper'){
+//         return 'Player 2 won!'
+//     }else if(p1 == 'paper' && p2 == 'paper'){
+//         return 'Draw!'
+//     }else if(p1 == 'paper' && p2 == 'rock'){
+//         return 'Player 1 won!'
+//     }else if(p1 == 'paper' && p2 == 'scissors'){
+//         return 'Player 2 won!'
+//     }
+// }
+
+//04/18/2023
+// function removeChar(str){
+//     let newStr = str.split('')
+//     newStr.pop()
+//     newStr.shift()
+//     return newStr.join('')
+// }
+
+
+// function remove (string) {
+//     arr = string.split(' ');
+//     let newArr = []
+//     arr.forEach((x , i) => {
+//         let count = 0
+//         arr2 = x.split('');
+//         console.log(arr2);
+//             arr2.forEach((e) =>{
+//                 if(e === '!'){
+//                     count++
+//                 }} ); 
+//             console.log(count)     
+    
+//         if(count !== 1){
+//             console.log("a");
+//             newArr.push(x)
+//         }
+//     });
+//     return(newArr.join(' '))  
+//   };
+
+//   remove("hi! hi! hi! !hi hi! hi hi hi!!")
+
+//   function splitter(str){
+//     console.log(str.split("i").length)
+//   }
+
+// function count(string) {
+//     let obj = {};
+//     for (const letter of string.split('')) {
+//         // obj[letter] = (obj[letter] || 0) + 1;
+//         obj[letter] = (obj[letter] || 0) +1
+//     }
+//     return obj
+// }
+
+// function lotsADots(equation){
+//     let newArr = []
+//     if (equation.search('/') > -1){
+//         let arr = equation.split('//');
+//         let a = (arr[0].split('.').length-1);
+//         let b = (arr[1].split('.').length-1);
+//         for(let i = 0; i < Math.floor(a/b); i++){
+//             newArr[i]= "."
+//         }
+//         return newArr.join('')
+//     }else if(equation.search("\\*") > -1){
+//              let arr = equation.split("*");
+//              let a = (arr[0].split('.').length-1);
+//              let b = (arr[1].split('.').length-1);
+//              for(let i = 0; i < a*b; i++){
+//                 newArr[i]= "."
+//             }
+//              return newArr.join('')
+//     }else if(equation.search('\\+') > -1){
+//         let arr = equation.split('+');
+//         let a = (arr[0].split('.').length-1);
+//         let b = (arr[1].split('.').length-1);
+//         for(let i = 0; i < a+b; i++){
+//             newArr[i]= "."
+//         }
+//         return newArr.join('')
+//     }else if(equation.search('\\-') > -1){
+//         let arr = equation.split('-');
+//         let a = (arr[0].split('.').length-1);
+//         let b = (arr[1].split('.').length-1);
+//         for(let i = 0; i < a-b; i++){
+//             newArr[i]= "."
+//         }
+//         return newArr.join('')
+//     }
+// }
+// console.log(lotsADots(".....//." ) ) 
+// console.log(lotsADots('.....+.....'))
+
+// function feast(beast, dish) {
+//     if(beast.slice(0,1) === dish.slice(0,1) && beast.slice(-1) === dish.slice(-1)){
+//         return true
+//     }else return false
+//     }
+
+
+// feast('grump', 'gravy soup')
