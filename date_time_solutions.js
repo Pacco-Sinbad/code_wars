@@ -289,3 +289,29 @@
 
 
 // feast('grump', 'gravy soup')
+
+//04/19/2023
+//1.
+// function opposite(number){
+//     return number * -1
+//
+
+//2.
+// function hero(bullets, dragons){
+//     return bullets / dragons >= 2
+// }
+
+// console.log(hero(7,4))
+
+function solution(string){
+    arr = string.split('')
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i] !== arr[i].toLowerCase() ){
+                arr.splice(i,0, " ")
+                i++
+            }
+    }
+    return arr.join('')
+}
+
+solution('bigPapi')
