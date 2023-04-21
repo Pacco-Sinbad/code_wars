@@ -303,15 +303,31 @@
 
 // console.log(hero(7,4))
 
-function solution(string){
-    arr = string.split('')
-    for (let i = 0; i < arr.length; i++){
-        if(arr[i] !== arr[i].toLowerCase() ){
-                arr.splice(i,0, " ")
-                i++
-            }
-    }
-    return arr.join('')
-}
+// function solution(string){
+//     arr = string.split('')
+//     for (let i = 0; i < arr.length; i++){
+//         if(arr[i] !== arr[i].toLowerCase() ){
+//                 arr.splice(i,0, " ")
+//                 i++
+//             }
+//     }
+//     return arr.join('')
+// }
 
-solution('bigPapi')
+// solution('bigPapi')
+
+//04/20/2023
+
+// function squareDigits(num){
+//     num = num.toString()
+//     arr = num.split('')
+//     num = arr.map((x) => Math.pow(Number(x),2)).join('')
+//     return Number(num)
+//   }
+
+// console.log(squareDigits(8118))
+
+// //refactored to
+// function squareDigits(num){
+//     return Number(num.toString().split('').map(x=>(Math.pow((Number(x)), 2))).join(''))
+//   }
