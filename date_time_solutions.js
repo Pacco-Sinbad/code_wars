@@ -331,3 +331,18 @@
 // function squareDigits(num){
 //     return Number(num.toString().split('').map(x=>(Math.pow((Number(x)), 2))).join(''))
 //   }
+
+//04/23/2023
+
+// function duplicateEncode(word){
+//     const str = word.toLowerCase()
+//     const arr = str.split('')
+//     let wordEncoded = ''
+//     for (let i = 0; i < arr.length; i++){
+//         let numberOfOccurences = str.split(arr[i]).length
+//         if (numberOfOccurences > 2){
+//             wordEncoded += ')'
+//         }else wordEncoded += '('
+//     }
+//     console.log(wordEncoded)
+// }
