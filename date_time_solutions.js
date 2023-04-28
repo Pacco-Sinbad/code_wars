@@ -354,3 +354,32 @@
 //   }
 
 // console.log(filter_list([2,3,'f','t',4,5,'l']))
+
+//04/28/2023
+
+// function isPangram(string){
+//     //receive a string that could contain any type of character
+//     // return true or false based on whether the string contains every letter of the alphabet regardless of case
+//     // set the alphabet as a variable
+//     let a = 'abcdefghijklmnopqrstuvwxyz'
+//     alphabet = a.split('')
+//     //convert string to all lower case
+//     string = string.toLowerCase()
+//     // search array to check if any letters from the alphabet are missing
+//     let count = 0
+//     for (let i = 0; i < alphabet.length ; i++){
+//         let pos = string.search(alphabet[i])
+//         if (pos > -1){
+//             count++
+//         }
+//         console.log(count)
+//     }
+//     if (count >= 26){
+//         return true
+//     }else return false
+//     //use method .includes to check for entire alphabet
+//     //return true if no letters are missing
+//   }
+
+// // isPangram('The quick brown fox jumps over the lazy dog')
+// // isPangram('this is not a pangram')
