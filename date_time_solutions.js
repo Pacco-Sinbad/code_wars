@@ -346,3 +346,11 @@
 //     }
 //     console.log(wordEncoded)
 // }
+
+//04/27/2023
+
+// function filter_list(l) {
+//     return l.filter((x) => x !== x.toString())
+//   }
+
+// console.log(filter_list([2,3,'f','t',4,5,'l']))
