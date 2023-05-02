@@ -383,3 +383,12 @@
 
 // // isPangram('The quick brown fox jumps over the lazy dog')
 // // isPangram('this is not a pangram')
+
+//05/01/2023
+
+function minMax(arr){
+    let newArr = arr.sort((a,b) => a-b)
+    return [newArr[0],newArr[newArr.length-1]]
+  }
+
+minMax([2,3,7,1])
