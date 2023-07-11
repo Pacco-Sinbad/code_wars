@@ -386,9 +386,44 @@
 
 //05/01/2023
 
-function minMax(arr){
-    let newArr = arr.sort((a,b) => a-b)
-    return [newArr[0],newArr[newArr.length-1]]
-  }
+// function minMax(arr){
+//     let newArr = arr.sort((a,b) => a-b)
+//     return [newArr[0],newArr[newArr.length-1]]
+//   }
 
-minMax([2,3,7,1])
+// minMax([2,3,7,1])
+
+//07/10/23
+
+// String.prototype.toJadenCase = function(str){
+//     let newArr = str.split(' ');
+//     let strArr = newArr.map( x => {
+//         let arr = x.split('')
+//         arr[0] = arr[0].toUpperCase()
+//         x = arr.join('')
+//         return x 
+//     })
+//     str = strArr.join(' ')
+//     console.log(str)
+// }
+
+
+// function toJadenCase(str){
+//     console.log(str)
+//     let newArr = str.split(' ');
+//     let strArr = newArr.map( x => {
+//         let arr = x.split('')
+//         arr[0] = arr[0].toUpperCase()
+//         x = arr.join('')
+//         console.log(x)
+//         return x 
+//     })
+//     str = strArr.join(' ')
+//     console.log(str)
+// }
+
+// str = "How can mirrors be real if our eyes aren't real"
+
+// console.log(str.toJadenCase())
+
+//mostly had the right idea but failed to use this in my solution. The kata required us to create a prototype. this means we are treating the strings as objects because we are adding a method to be used.
