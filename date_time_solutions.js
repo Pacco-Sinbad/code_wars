@@ -427,3 +427,11 @@
 // console.log(str.toJadenCase())
 
 //mostly had the right idea but failed to use this in my solution. The kata required us to create a prototype. this means we are treating the strings as objects because we are adding a method to be used.
+
+//07/11/23
+
+// function greet (name, owner) {
+//     if(name == owner){
+//         return `Hello boss`
+//     }else return `Hello guest`
+//   }
