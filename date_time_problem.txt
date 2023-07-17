@@ -331,3 +331,24 @@ Link to Jaden's former Twitter account @officialjaden via archive.org
 // case	return
 // name equals owner	'Hello boss'
 // otherwise	'Hello guest'
+
+//07/14/23
+
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+Example: (Input --> Output)
+
+"Dermatoglyphics" --> true "aba" --> false "moOse" --> false (ignore letter case)
+
+isIsogram "Dermatoglyphics" = true
+isIsogram "moose" = false
+isIsogram "aba" = false
+
+//7/17/23
+
+DESCRIPTION:
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9 because 
+
+

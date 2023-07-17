@@ -435,3 +435,27 @@
 //         return `Hello boss`
 //     }else return `Hello guest`
 //   }
+
+// 07/14/23
+
+// function isAnIsogram(str){
+//     let alpha = 'abcdefghijklmnopqrstuvwxyz'
+//     let alphArr = alpha.split('')
+//     let count = 0
+//     alphArr.forEach(x => {
+//         if(str.toLowerCase().split(x).length > 2){
+//             count++
+//         }
+//     })
+//     if(count > 0){
+//         return false
+//     }else return true
+// }
+
+// console.log(isAnIsogram('Dermatol'))
+
+function squareSum(numbers){
+   return numbers.reduce(((sum, current)=> Math.pow(current,2) + sum ), 0)
+}
+
+console.log(squareSum([2,3]))
