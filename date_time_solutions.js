@@ -482,4 +482,13 @@
 
 // vampireTest(221,354)
 
+//solution
+
+function vampire_test(a, b){
+   return sortStr(a + '' + b) == sortStr(a * b + '');
+ }
+console.log(vampire_test(22,33))
+function sortStr(x){ return x.split('').sort().join('') }
+
+
 // i misunderstood the task and thought there could be other digits contained in the product as long as the the original digits were contained in the product. the digits were supposed to be the same without additional digits. this can be accomplished by sorting the two sets of digits and comparing them to each other.
