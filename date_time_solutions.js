@@ -454,8 +454,32 @@
 
 // console.log(isAnIsogram('Dermatol'))
 
-function squareSum(numbers){
-   return numbers.reduce(((sum, current)=> Math.pow(current,2) + sum ), 0)
-}
+// 07/17/23
 
-console.log(squareSum([2,3]))
+// function squareSum(numbers){
+//    return numbers.reduce(((sum, current)=> Math.pow(current,2) + sum ), 0)
+// }
+
+// console.log(squareSum([2,3]))
+
+// 07/18/23
+
+// function vampireTest(a, b) {
+//    let product = a*b
+//    let prodArr = product.toString().split('')
+//    console.log(prodArr)
+//    console.log(product)
+//    let arr = (a.toString() + b.toString()).split('')
+//    console.log(arr)
+//    let numbers = [1,2,3,4,5,6,7,8,9,0]
+//    if(x //occurences in product is not equal to occurences in arr
+//    )return false
+//    else return true
+
+
+//    //return false if 
+//  }
+
+// vampireTest(221,354)
+
+// i misunderstood the task and thought there could be other digits contained in the product as long as the the original digits were contained in the product. the digits were supposed to be the same without additional digits. this can be accomplished by sorting the two sets of digits and comparing them to each other.
