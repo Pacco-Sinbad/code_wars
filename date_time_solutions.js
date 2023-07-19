@@ -484,11 +484,54 @@
 
 //solution
 
-function vampire_test(a, b){
-   return sortStr(a + '' + b) == sortStr(a * b + '');
- }
-console.log(vampire_test(22,33))
-function sortStr(x){ return x.split('').sort().join('') }
+// function vampire_test(a, b){
+//    return sortStr(a + '' + b) == sortStr(a * b + '');
+//  }
+// console.log(vampire_test(22,33))
+// function sortStr(x){ return x.split('').sort().join('') }
 
 
 // i misunderstood the task and thought there could be other digits contained in the product as long as the the original digits were contained in the product. the digits were supposed to be the same without additional digits. this can be accomplished by sorting the two sets of digits and comparing them to each other.
+
+//7/19/23
+
+function creatObj(x){
+  let stringSplitIntoWords = x.split(' ')
+  // assign a number value to each letter that corrolates with its position in the alphabet
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const alphaArray = alphabet.split('') 
+  //determine the total value of each word based on the letter it contains
+  let obj = {}
+  stringSplitIntoWords.forEach((e)=>{
+    let sum = 0;
+    alphaArray.forEach((x)=>{
+      for (letters of e){
+        if (letters == x){
+          sum += alphaArray.indexOf(x)+1
+        };
+      };
+      
+    })
+  // console.log(sum)
+  // console.log(e)
+  obj[e] = sum  
+  })
+  return obj
+    //sort the array of words and return the largest one.
+}
+
+function high(x){
+  let objResult = creatObj(x)
+  let maxValue = Number.MIN_VALUE;
+  let maxKey;
+
+  Object.entries(objResult).forEach(([key, value])=>{
+    if(value > maxValue) {
+      maxValue = value;
+      maxKey = key;
+    }}
+  )
+return maxKey
+}
+
+high('man i need a taxi up to ubudz')
