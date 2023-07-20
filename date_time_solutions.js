@@ -495,43 +495,49 @@
 
 //7/19/23
 
-function creatObj(x){
-  let stringSplitIntoWords = x.split(' ')
-  // assign a number value to each letter that corrolates with its position in the alphabet
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  const alphaArray = alphabet.split('') 
+// function creatObj(x){
+//   let stringSplitIntoWords = x.split(' ')
+//   // assign a number value to each letter that corrolates with its position in the alphabet
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//   const alphaArray = alphabet.split('') 
   //determine the total value of each word based on the letter it contains
-  let obj = {}
-  stringSplitIntoWords.forEach((e)=>{
-    let sum = 0;
-    alphaArray.forEach((x)=>{
-      for (letters of e){
-        if (letters == x){
-          sum += alphaArray.indexOf(x)+1
-        };
-      };
+//   let obj = {}
+//   stringSplitIntoWords.forEach((e)=>{
+//     let sum = 0;
+//     alphaArray.forEach((x)=>{
+//       for (letters of e){
+//         if (letters == x){
+//           sum += alphaArray.indexOf(x)+1
+//         };
+//       };
       
-    })
-  // console.log(sum)
-  // console.log(e)
-  obj[e] = sum  
-  })
-  return obj
-    //sort the array of words and return the largest one.
+//     })
+//   // console.log(sum)
+//   // console.log(e)
+//   obj[e] = sum  
+//   })
+//   return obj
+//     //sort the array of words and return the largest one.
+// }
+
+// function high(x){
+//   let objResult = creatObj(x)
+//   let maxValue = Number.MIN_VALUE;
+//   let maxKey;
+
+//   Object.entries(objResult).forEach(([key, value])=>{
+//     if(value > maxValue) {
+//       maxValue = value;
+//       maxKey = key;
+//     }}
+//   )
+// return maxKey
+// }
+
+// high('man i need a taxi up to ubudz')
+
+//07/20/23
+
+function enough(cap, on, wait){
+  return cap - on - wait >= 0 ? 0 : (cap-on-wait)*-1 
 }
-
-function high(x){
-  let objResult = creatObj(x)
-  let maxValue = Number.MIN_VALUE;
-  let maxKey;
-
-  Object.entries(objResult).forEach(([key, value])=>{
-    if(value > maxValue) {
-      maxValue = value;
-      maxKey = key;
-    }}
-  )
-return maxKey
-}
-
-high('man i need a taxi up to ubudz')
