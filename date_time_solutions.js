@@ -542,16 +542,40 @@
 //   return cap - on - wait >= 0 ? 0 : (cap-on-wait)*-1 
 // }
 
-function duplicateCount(text){
-  let count = 0
-  let alphaNumeric = 'abcdefghijklmnopqrstuvwxyz123456789'
-  let aNArray = alphaNumeric.split('')
-  aNArray.forEach((e) => {
-    if(text.toLowerCase().split(e).length > 2){
-      count++
-    }
-  })
-  return count
-}
+//07/24/23
 
-duplicateCount('alpha11')
+// function duplicateCount(text){
+//   let count = 0
+//   let alphaNumeric = 'abcdefghijklmnopqrstuvwxyz123456789'
+//   let aNArray = alphaNumeric.split('')
+//   aNArray.forEach((e) => {
+//     if(text.toLowerCase().split(e).length > 2){
+//       count++
+//     }
+//   })
+//   return count
+// }
+
+// duplicateCount('alpha11')
+
+// var Ghost = function() {
+//   let color = Math.ceil((Math.random*4))
+//   if(color == 1){
+//     color = 'white'
+//   }else if (color == 2){
+//     color = 'yellow'
+//   }else if (color == 3){
+//     color = 'purple'
+//   }else color = 'red'
+// }
+
+// ///failed
+
+function dblChar(str){
+  let arr = str.split('')
+  let newArr = []
+  arr.forEach(e => {
+    newArr.push(`${e}${e}`)
+  })
+  return newArr.join('')
+}
