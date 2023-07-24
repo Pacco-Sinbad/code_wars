@@ -538,6 +538,20 @@
 
 //07/20/23
 
-function enough(cap, on, wait){
-  return cap - on - wait >= 0 ? 0 : (cap-on-wait)*-1 
+// function enough(cap, on, wait){
+//   return cap - on - wait >= 0 ? 0 : (cap-on-wait)*-1 
+// }
+
+function duplicateCount(text){
+  let count = 0
+  let alphaNumeric = 'abcdefghijklmnopqrstuvwxyz123456789'
+  let aNArray = alphaNumeric.split('')
+  aNArray.forEach((e) => {
+    if(text.toLowerCase().split(e).length > 2){
+      count++
+    }
+  })
+  return count
 }
+
+duplicateCount('alpha11')
