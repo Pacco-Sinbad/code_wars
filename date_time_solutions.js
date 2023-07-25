@@ -4,6 +4,8 @@
 //     return list[0];
 // }
 
+// const { lang } = require("moment");
+
 // var max = function(list){
 //     list.sort((a,b) => a < b ? 1 : -1)
 //     return list[0];
@@ -571,11 +573,57 @@
 
 // ///failed
 
-function dblChar(str){
-  let arr = str.split('')
-  let newArr = []
-  arr.forEach(e => {
-    newArr.push(`${e}${e}`)
-  })
-  return newArr.join('')
+// function dblChar(str){
+//   let arr = str.split('')
+//   let newArr = []
+//   arr.forEach(e => {
+//     newArr.push(`${e}${e}`)
+//   })
+//   return newArr.join('')
+// }
+
+//07/25/23
+
+// function Ship(draft,crew) {
+//   this.draft = draft;
+//   this.crew = crew;
+//   this.isWorthIt = function(){
+//     return this.draft - (this.crew*1.5) > 20
+//   }
+//  }
+
+// 
+
+const Greetings = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso'
 }
+
+console.log(Greetings)
+
+function greet(language) {
+  for (const lang in Greetings){
+    if(language == lang){
+      console.log(Greetings[lang])
+      return Greetings[lang]
+    } 
+  }
+  return Greetings.english
+}
+
+greet('latvian')
