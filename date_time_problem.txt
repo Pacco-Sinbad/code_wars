@@ -506,3 +506,26 @@ Possible invalid inputs include:
 IP_ADDRESS_INVALID - not a valid ipv4 or ipv6 ip address
 IP_ADDRESS_NOT_FOUND - ip address not in the database
 IP_ADDRESS_REQUIRED - no ip address was supplied
+
+/////07/26/23
+
+According to the creation myths of the Abrahamic religions, Adam and Eve were the first Humans to wander the Earth.
+
+You have to do God's job. The creation method must return an array of length 2 containing objects (representing Adam and Eve). The first object in the array should be an instance of the class Man. The second should be an instance of the class Woman. Both objects have to be subclasses of Human. Your job is to implement the Human, Man and Woman classes.
+
+//
+
+We want to create a constructor function 'NameMe', which takes first name and last name as parameters. The function combines the first and last names and saves the value in "name" property.
+
+We already implemented that function, but when we actually run the code, the "name" property is accessible, but the "firstName" and "lastName" is not accessible. All the properties should be accessible. Can you find what's wrong with it? A test fixture is also available
+
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return {name: this.firstName + ' ' + this.lastName};
+}
+
+var n = new NameMe('John', 'Doe');
+n.firstName //Expected: John
+n.lastName //Expected: Doe
+n.name //Expected: John Doe

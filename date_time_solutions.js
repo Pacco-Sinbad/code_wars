@@ -594,36 +594,64 @@
 
 // 
 
-const Greetings = {
-  english: 'Welcome',
-  czech: 'Vitejte',
-  danish: 'Velkomst',
-  dutch: 'Welkom',
-  estonian: 'Tere tulemast',
-  finnish: 'Tervetuloa',
-  flemish: 'Welgekomen',
-  french: 'Bienvenue',
-  german: 'Willkommen',
-  irish: 'Failte',
-  italian: 'Benvenuto',
-  latvian: 'Gaidits',
-  lithuanian: 'Laukiamas',
-  polish: 'Witamy',
-  spanish: 'Bienvenido',
-  swedish: 'Valkommen',
-  welsh: 'Croeso'
-}
+// const Greetings = {
+//   english: 'Welcome',
+//   czech: 'Vitejte',
+//   danish: 'Velkomst',
+//   dutch: 'Welkom',
+//   estonian: 'Tere tulemast',
+//   finnish: 'Tervetuloa',
+//   flemish: 'Welgekomen',
+//   french: 'Bienvenue',
+//   german: 'Willkommen',
+//   irish: 'Failte',
+//   italian: 'Benvenuto',
+//   latvian: 'Gaidits',
+//   lithuanian: 'Laukiamas',
+//   polish: 'Witamy',
+//   spanish: 'Bienvenido',
+//   swedish: 'Valkommen',
+//   welsh: 'Croeso'
+// }
 
-console.log(Greetings)
+// console.log(Greetings)
 
-function greet(language) {
-  for (const lang in Greetings){
-    if(language == lang){
-      console.log(Greetings[lang])
-      return Greetings[lang]
-    } 
+// function greet(language) {
+//   for (const lang in Greetings){
+//     if(language == lang){
+//       console.log(Greetings[lang])
+//       return Greetings[lang]
+//     } 
+//   }
+//   return Greetings.english
+// }
+
+// greet('latvian')
+
+
+//////07/26/23
+class God{
+ 
+    static create(){
+      class Human{}  
+      class Man extends Human{};
+      class Woman extends Human{};
+      let arr = [new Man, new Woman]
+      return arr
+    }
   }
-  return Greetings.english
+  //had the right idea but i need to set up the classes outside of the method. then the method can use those classes to create the new objects in the arr. all the code was writeen corrently but i had it in the wrong order.
+
+////
+
+function NameMe(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+  this.name = `${this.firstName} ${this.lastName}`
+  return this.name
 }
 
-greet('latvian')
+var n = new NameMe('John', 'Doe');
+console.log(n.firstName) //Expected: John
+console.log(n.lastName) //Expected: Doe
+console.log(n.name) //Expected: John Doe
