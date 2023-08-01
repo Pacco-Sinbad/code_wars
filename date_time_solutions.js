@@ -630,28 +630,73 @@
 
 
 //////07/26/23
-class God{
+// class God{
  
-    static create(){
-      class Human{}  
-      class Man extends Human{};
-      class Woman extends Human{};
-      let arr = [new Man, new Woman]
-      return arr
-    }
-  }
-  //had the right idea but i need to set up the classes outside of the method. then the method can use those classes to create the new objects in the arr. all the code was writeen corrently but i had it in the wrong order.
+//     static create(){
+//       class Human{}  
+//       class Man extends Human{};
+//       class Woman extends Human{};
+//       let arr = [new Man, new Woman]
+//       return arr
+//     }
+//   }
+//   //had the right idea but i need to set up the classes outside of the method. then the method can use those classes to create the new objects in the arr. all the code was writeen corrently but i had it in the wrong order.
 
-////
+// ////
 
-function NameMe(first, last) {
-  this.firstName = first;
-  this.lastName = last;
-  this.name = `${this.firstName} ${this.lastName}`
-  return this.name
-}
+// function NameMe(first, last) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.name = `${this.firstName} ${this.lastName}`
+//   return this.name
+// }
 
-var n = new NameMe('John', 'Doe');
-console.log(n.firstName) //Expected: John
-console.log(n.lastName) //Expected: Doe
-console.log(n.name) //Expected: John Doe
+// var n = new NameMe('John', 'Doe');
+// console.log(n.firstName) //Expected: John
+// console.log(n.lastName) //Expected: Doe
+// console.log(n.name) //Expected: John Doe
+
+// 08/01/23
+
+// class Solution{
+// }
+
+
+
+// Object.main.prototype = () => {
+//   console.log('Hello World!')
+// };
+
+// ///apparently im just fucking stupid idk fuck this shit.
+
+//////
+
+// class Block{
+
+//   constructor(data){
+//     this._width = data[0];
+//     this._length = data[1];
+//     this._height = data[2];
+//   };
+// getWidth(){
+//   return this._width
+// };
+// getLength(){
+//   return this._length
+// };
+// getHeight(){
+//   return this._height
+// };
+// getVolume(){
+//   return this._width*this._height*this._length
+// };
+// getSurfaceArea(){
+//   return this._height*this._width*2 + this._height*this._length*2 + this._length*this._width*2
+// }
+
+// }  
+
+// let b = new Block([2,3,4])
+
+  
+//This was a rough reintroduction to using classes with objects. I have a lot of the ideas accurate but i definitely need to work on the syntax

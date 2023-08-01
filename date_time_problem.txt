@@ -529,3 +529,54 @@ var n = new NameMe('John', 'Doe');
 n.firstName //Expected: John
 n.lastName //Expected: Doe
 n.name //Expected: John Doe
+
+////// 08/01/23
+
+You are given a method called main, make it print the line Hello World!, (yes, that includes a new line character at the end) and don't return anything
+
+Note that for some languages, the function main is the entry point of the program.
+
+Here's how it will be tested:
+
+    Solution.main("parameter1","parameter2");
+Hints:
+
+Check your references
+Think about the scope of your method
+For prolog you can use write but there are better ways
+If you still don't get it probably you can define main as an attribute of the Solution class that accepts a single argument, and that only prints "Hello World!" without any return.
+
+
+////////
+
+Write a class Block that creates a block (Duh..)
+
+Requirements
+The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
+
+Define these methods:
+
+`getWidth()` return the width of the `Block`
+
+`getLength()` return the length of the `Block`
+
+`getHeight()` return the height of the `Block`
+
+`getVolume()` return the volume of the `Block`
+
+`getSurfaceArea()` return the surface area of the `Block`
+Examples
+    let b = new Block([2,4,6]) -> creates a `Block` object with a width of `2` a length of `4` and a height of `6`
+    b.getWidth() // -> 2
+    
+    b.getLength() // -> 4
+    
+    b.getHeight() // -> 6
+    
+    b.getVolume() // -> 48
+    
+    b.getSurfaceArea() // -> 88
+Note: no error checking is needed
+
+Any feedback would be much appreciated
+
