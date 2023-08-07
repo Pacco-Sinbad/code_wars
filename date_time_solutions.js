@@ -700,3 +700,51 @@
 
   
 //This was a rough reintroduction to using classes with objects. I have a lot of the ideas accurate but i definitely need to work on the syntax
+
+
+///////08/07/23
+
+// class Guesser {
+//   constructor(number, lives) {
+//     this.number = number;
+//     this.lives = lives;
+//   }
+  
+//   guess(n) {
+//     this.livesCheck()
+//     if (n != this.number){
+//       this.lives = this.lives -= 1
+//       return false;
+//     }
+//     else if(n == this.number){
+//       return true
+//     }
+//   }
+
+//   livesCheck(){
+//     if(this.lives == 0){
+//       new Error
+//       return 'error already dead'
+//     }else console.log('poop')
+//   }
+// }
+
+/////
+
+// function solution(str, ending){
+//   console.log(str.slice())
+//   console.log(str.slice(ending.length*-1))
+//   return str.slice(ending.length*-1) === ending
+// }
+
+// solution('poopy', '')
+
+///fucking stupid kata. doesnt state that an empty string is possible and as far as im concerned an empty string shouldnt return true. i think this is a bad test. the kata is essentially asking us to use a specific method rather than solve the problem. tasking us with figuring out what method they want us to use is stupid. an empty string for ending should throw an error not return true. for what its worth, the method they wanted us to use was .endswith
+
+// function sum(numbers){
+//   if (numbers.lenth == 0){
+//     return 0
+//   }else return numbers.reduce((acc, x) => acc + x, 0 ) 
+// }
+
+// sum([2,3,4,5])
