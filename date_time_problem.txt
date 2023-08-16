@@ -620,3 +620,48 @@ You can assume that you do get an array and if the array is empty, return 0.
 What We're Testing
 We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
 Advanced users may find this extremely easy and can easily write this in one line.
+
+////08/15/23
+
+Your job is to create a class called Song.
+
+A new Song will take two parameters, title and artist.
+
+const mountMoose = new Song('Mount Moose', 'The Snazzy Moose');
+
+mountMoose.title => 'Mount Moose'
+mountMoose.artist => 'The Snazzy Moose'
+You will also have to create an instance method named howMany() (or how_many()).
+
+The method takes an array of people who have listened to the song that day. The output should be how many new listeners the song gained on that day out of all listeners. Names should be treated in a case-insensitive manner, i.e. "John" is the same as "john".
+
+Example
+const mountMoose = new Song('Mount Moose', 'The Snazzy Moose');
+
+// day 1 (or test 1)
+mountMoose.howMany(['John', 'Fred', 'BOb', 'carl', 'RyAn']); => 5
+// These are all new since they are the first listeners.
+
+// day 2
+mountMoose.howMany(['JoHn', 'Luke', 'AmAndA']); => 2
+// Luke and Amanda are new, john already listened to it the previous day
+Also if the same person listened to it more than once a day it should only count them once.
+
+Example
+const mountMoose = new Song('Mount Moose', 'The Snazzy Moose');
+
+// day 1
+mountMoose.howMany(['John', 'joHN', 'carl']); => 2
+Good luck!
+
+////////
+
+The following code could use a bit of object-oriented artistry. While it's a simple method and works just fine as it is, in a larger system it's best to organize methods into classes/objects. (Or, at least, something similar depending on your language)
+
+Refactor the following code so that it belongs to a Person class/object. Each Person instance will have a greet method. The Person instance should be instantiated with a name so that it no longer has to be passed into each greet method call.
+
+Here is how the final refactored code would be used:
+
+var joe = new Person('Joe');
+joe.greet('Kate'); // should return 'Hello Kate, my name is Joe'
+joe.name           // should == 'Joe'

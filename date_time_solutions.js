@@ -748,3 +748,46 @@
 // }
 
 // sum([2,3,4,5])
+
+
+////////08/15/23
+
+// class Song {
+//   constructor(title,artist){
+//     this.title = title;
+//     this.artist = artist;
+//     this.pastListeners = ['mathias','kiley']
+//   }
+//   howMany(arr){
+//     let newListenerCount = 0
+//     let easyArr = arr.map(x => x.toLowerCase())
+//     easyArr.forEach((x)=>{ 
+//       if(!this.pastListeners.includes(x)){
+//         newListenerCount++
+//         this.pastListeners.push(x)
+//       }
+//     })
+//     return newListenerCount
+//   }
+// }
+
+// const mountMoose = new Song('Mount Moose', 'The Snazzy Moose' )
+
+// mountMoose.howMany(['john','daisY'])
+
+
+////////
+
+class Person{
+  constructor(name){
+    this.name = name;
+  }
+  greet(person){
+    return `Hello ${person} my name is ${this.name}`
+  }
+}
+
+const joe = new Person('Joe')
+
+console.log(joe.greet('Kate'))
+console.log(joe.name)
