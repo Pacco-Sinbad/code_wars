@@ -778,16 +778,23 @@
 
 ////////
 
-class Person{
-  constructor(name){
-    this.name = name;
-  }
-  greet(person){
-    return `Hello ${person} my name is ${this.name}`
-  }
+// class Person{
+//   constructor(name){
+//     this.name = name;
+//   }
+//   greet(person){
+//     return `Hello ${person} my name is ${this.name}`
+//   }
+// }
+
+// const joe = new Person('Joe')
+
+// console.log(joe.greet('Kate'))
+// console.log(joe.name)
+
+
+// 12.27.2023
+
+function makeNegative(num){
+  return num < 0 ? num : num*-1
 }
-
-const joe = new Person('Joe')
-
-console.log(joe.greet('Kate'))
-console.log(joe.name)
