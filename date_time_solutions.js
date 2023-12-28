@@ -795,7 +795,13 @@
 
 // 12.27.2023
 
-function makeNegative(num){
-  return num < 0 ? num : num*-1
-}
+// function makeNegative(num){
+//   return num < 0 ? num : num*-1
+// }
 
+// 12.28.2023
+
+// function XO(str) {
+//   str = str.toLowerCase()
+//   return str.split('x').length == str.split('o').length
+// }
