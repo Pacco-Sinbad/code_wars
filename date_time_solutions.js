@@ -805,3 +805,9 @@
 //   str = str.toLowerCase()
 //   return str.split('x').length == str.split('o').length
 // }
+
+//1.15.2024
+
+var isSquare = function(n){
+  return (Math.sqrt(n)) % 1 === 0
+}
