@@ -808,6 +808,36 @@
 
 //1.15.2024
 
-var isSquare = function(n){
-  return (Math.sqrt(n)) % 1 === 0
+// var isSquare = function(n){
+//   return (Math.sqrt(n)) % 1 === 0
+// }
+
+// 1.24.2024
+
+//1.
+// let square = (num) => {
+//   return Math.pow(num,2)
+// }
+
+//2.
+
+// function alphabetPosition(string){
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+// return string.toLowerCase().split('').map((x,i) => (alphabet.indexOf(x)+1)).filter((x) => x>0).join(' ')
+//  }
+
+//3.
+
+function solution(numb){
+  let arr = []
+  for (let i = 0; i < numb; i++){
+    if(i % 3 ===  0){
+      arr.push(i) 
+    }else if(i % 5 === 0){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((sum, x)=> sum + x, 0)
 }
+
+solution(73)
