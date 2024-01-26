@@ -828,16 +828,31 @@
 
 //3.
 
-function solution(numb){
-  let arr = []
-  for (let i = 0; i < numb; i++){
-    if(i % 3 ===  0){
-      arr.push(i) 
-    }else if(i % 5 === 0){
-      arr.push(i)
-    }
-  }
-  return arr.reduce((sum, x)=> sum + x, 0)
-}
+// function solution(numb){
+//   let arr = []
+//   for (let i = 0; i < numb; i++){
+//     if(i % 3 ===  0){
+//       arr.push(i) 
+//     }else if(i % 5 === 0){
+//       arr.push(i)
+//     }
+//   }
+//   return arr.reduce((sum, x)=> sum + x, 0)
+// }
 
-solution(73)
+// solution(73)
+
+// 01/26/2024
+
+// var uniqueInOrder=function(iterable){
+//   if( !Array.isArray(iterable)){
+//     let array = iterable.split('');
+//   }else array = iterable;
+//   let solution = [];
+//   for (let i = 0; i < iterable.length; i++){
+//     if(iterable[i] !== iterable[i-1]){
+//       solution.push(iterable[i]);
+//     };
+//   };
+//   return solution
+// }
