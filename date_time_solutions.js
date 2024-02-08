@@ -886,3 +886,17 @@
 //   }
 //   return numberOfLoops
 // }
+
+function reverseArrayInPlace(array) {
+  for (var i = 0; i < Math.floor(array.length / 2); i++) {
+     var old = array[i];
+     var end = array[array.length - 1 - i];
+     array[array.length - 1 - i] = old;
+     array[i] = end
+  }
+  console.log(array);
+}
+
+let array = [1,2,3,4]
+
+reverseArrayInPlace(array)
