@@ -887,16 +887,38 @@
 //   return numberOfLoops
 // }
 
-function reverseArrayInPlace(array) {
-  for (var i = 0; i < Math.floor(array.length / 2); i++) {
-     var old = array[i];
-     var end = array[array.length - 1 - i];
-     array[array.length - 1 - i] = old;
-     array[i] = end
+// function reverseArrayInPlace(array) {
+//   for (var i = 0; i < Math.floor(array.length / 2); i++) {
+//      var old = array[i];
+//      var end = array[array.length - 1 - i];
+//      array[array.length - 1 - i] = old;
+//      array[i] = end
+//   }
+//   console.log(array);
+// }
+
+// let array = [1,2,3,4]
+
+// reverseArrayInPlace(array)
+
+//02/13/24
+
+function digPow(n, p){
+  let arr = n.toString().split('')
+  let numArr = arr.map((i) => Number(i))
+  let tot = 0
+  console.log(Math.pow(0, 9))
+  for(i = 0; i <= numArr.length-1; i++){
+    tot += Math.pow(numArr[i], p+i)
   }
-  console.log(array);
+  for(let k = 1; k <= tot; k++){
+    if( tot == k*n ){ 
+      return k
+    }
+    else if (k * n > tot){
+      return -1
+    }
+  }
 }
 
-let array = [1,2,3,4]
-
-reverseArrayInPlace(array)
+digPow(46288, 3)
