@@ -903,22 +903,51 @@
 
 //02/13/24
 
-function digPow(n, p){
-  let arr = n.toString().split('')
-  let numArr = arr.map((i) => Number(i))
-  let tot = 0
-  console.log(Math.pow(0, 9))
-  for(i = 0; i <= numArr.length-1; i++){
-    tot += Math.pow(numArr[i], p+i)
-  }
-  for(let k = 1; k <= tot; k++){
-    if( tot == k*n ){ 
-      return k
-    }
-    else if (k * n > tot){
-      return -1
-    }
-  }
-}
+// function digPow(n, p){
+//   let arr = n.toString().split('')
+//   let numArr = arr.map((i) => Number(i))
+//   let tot = 0
+//   console.log(Math.pow(0, 9))
+//   for(i = 0; i <= numArr.length-1; i++){
+//     tot += Math.pow(numArr[i], p+i)
+//   }
+//   for(let k = 1; k <= tot; k++){
+//     if( tot == k*n ){ 
+//       return k
+//     }
+//     else if (k * n > tot){
+//       return -1
+//     }
+//   }
+// }
 
-digPow(46288, 3)
+// digPow(46288, 3)
+
+//02/14/24
+
+// function findShort(s){
+//   let arr =s.split(' ').sort((a,b)=> a.length > b.length ? 1 : -1)
+//   return arr[0].length
+// }
+
+// findShort('lets get the only words that i want')
+
+//II
+
+// function twoSort(s){
+//   let arr = s.split(' ').sort((a,b)=> a>b ? 1 : -1)
+//   return arr[0].split('').join('***')
+// }
+
+// twoSort('some stupid array about bitcoin')
+
+//III
+// function sumMix(x){
+//   console.log(x.reduce((acc, e)=> acc + +e, 0)) 
+//   }
+
+// sumMix(['1', 2])
+
+//IIII
+// Math.floor(time/2)
+
