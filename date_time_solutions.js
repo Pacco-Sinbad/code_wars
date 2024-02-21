@@ -951,3 +951,103 @@
 //IIII
 // Math.floor(time/2)
 
+//2/19/2024
+
+//I
+// function getMiddle(s)
+// {
+//   if(s.length % 2 == 0){
+//     console.log(s)
+//     return s.slice(s.length/2 -1 , s.length/2 +1)
+//   }else
+//     return s.slice(s.length/2, s.length/2+1)
+// }
+
+//II
+
+// function DNAtoRNA(dna) {
+//   return dna.split('').map((x)=> x == 'T' ? x = 'U' : x).join('')
+// }
+
+//III
+// function toIndustrial(time){
+//   if(time.length > 2){
+//     let minutes = time.slice(2)
+//     minutes = (+minutes / 60).toFixed(2)
+//     let hours = time.slice(0,1)
+//     hours = +hours
+//     console.log(+hours+ +minutes)
+//     return(+hours + +minutes)
+//   }else 
+//     console.log((time / 60).toFixed(2)) 
+//     return (time/60).toFixed(2)
+// }
+
+// function toNormal(time){
+//   if(time > 1){
+//     time = time.toString()
+//     let minutes = time.slice(2)
+//     minutes = (+minutes/100 * 60)
+//     let hours = time.slice(0,1)
+//     console.log(`${hours}:${minutes}`)
+//   }else
+//     console.log(Math.floor(time*60))
+// }
+
+
+// toIndustrial('1:45')
+
+// toIndustrial(2)
+
+// toNormal(1.5)
+
+// toNormal(.99)
+
+///this kata was fucking stupid
+
+// String.prototype.toAlternatingCase = function () {
+//   return this.split('').map((x)=> x.toLowerCase ? x.toUpperCase() : x.toLowerCase()).join('')
+// }
+
+// let s = 'HELLO'
+
+// console.log(s.toAlternatingCase)
+
+
+
+// String.prototype.toAlternatingCase = function () {
+//   return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+// }
+
+//2/21/24
+
+// function towerBuilder(n) {
+//   let pyramid = []
+//   const space = " "
+//   const floor = "*"
+//   let specChar = 1
+//   let spaceCnt = n-1
+//   for(let i = 1; i <= n; i++){
+//     let s = space.repeat(spaceCnt)+floor.repeat(specChar)+space.repeat(spaceCnt)
+//     specChar+=2
+//     spaceCnt-= 1
+//     pyramid.push(s)
+//   }
+//   return pyramid
+// }
+
+// towerBuilder(5)
+
+//i did not solve this one before looking at the solutions but i did solve it after realizing i needed the .repeat method.
+
+//II 
+
+//performed in browser but obvious answer.
+
+//III
+// function lovefunc(flower1, flower2){
+//   return flower1 % 2 !== flower2 % 2
+// }
+
+//IV
+
