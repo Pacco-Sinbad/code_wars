@@ -1051,3 +1051,41 @@
 
 //IV
 
+
+//2/23/24
+
+//s.repeat(n)
+
+//II 
+// function abbrevName(name){
+//   let arr = name.split(' ')
+//   let abbv = []
+//   arr[0]= arr[0].toUpperCase()
+//   arr[1]= arr[1].toUpperCase()
+//   abbv.push(arr[0].slice(0,1))
+//   abbv.push('.')
+//   abbv.push(arr[1].slice(0,1))
+//   return abbv.join('')
+//   }
+
+//III
+// const sequenceSum = (begin, end, step) => {
+//   if(end < begin){
+//     return 0
+//   }
+//   let num = 0
+//   for(let i = begin; i<=end; i+=step){
+//     num += i
+//   }
+//   return num
+// };
+
+//IV
+// const reverseSeq = n => {
+//   let arr=[]
+//   while(n>0){
+//     arr.push(n)
+//     n--
+//   }
+//   return arr;
+// };
